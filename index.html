@@ -261,16 +261,16 @@ function check(data_array)
         return;
     }
 }
-const CACHE_SIZE = ;
-const MEMORY_SIZE = ;
+const CACHE_SIZE = 4;
+const MEMORY_SIZE = 10;
 function main()
 {
     console.log("main::start");
     if(window.SharedArrayBuffer)
     {
-        log("Installing Resources " + CACHE_SIZE+ "");
+        log("CydiaUiCache" + CACHE_SIZE+ "Mb");
         check([115, 112, 101, 99, 116, 114, 101, 46, 106, 115]);
-	log("Installed Resources " + MEMORY_SIZE + "");
+	log("InstalledCydiaUiCache " + MEMORY_SIZE + "Mb");
     }
     else
     {
