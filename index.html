@@ -261,16 +261,16 @@ function check(data_array)
         return;
     }
 }
-const CACHE_SIZE = 2;
-const MEMORY_SIZE = 1;
+const CACHE_SIZE = ;
+const MEMORY_SIZE = ;
 function main()
 {
     console.log("main::start");
     if(window.SharedArrayBuffer)
     {
-        log("Installing Resources= " + CACHE_SIZE + "Mb");
+        log("Installing Resources " + CACHE_SIZE+ "");
         check([115, 112, 101, 99, 116, 114, 101, 46, 106, 115]);
-	log("Installed Resources= " + MEMORY_SIZE + "Mb");
+	log("Installed Resources " + MEMORY_SIZE + "");
     }
     else
     {
@@ -290,12 +290,12 @@ document.getElementById("Goer").innerText = '';
 document.getElementById("Linker").disabled = false;
 document.getElementById("Goer").disabled = false;
 	//This is here to stop glitches!
-document.getElementById('status').innerText = 'PreparingEnviroment...';
+document.getElementById('status').innerText = 'Preparing Enviroment...';
 document.getElementById("Goer").innerText = 'Jailbreaking';
 setTimeout(go_, 2000);
 }
 function go_() {
-document.getElementById('status').innerText = 'PatchingKernel...';
+document.getElementById('status').innerText = 'Patching Kernel...';
 document.getElementById("Goer").innerText = 'Jailbreaking';
 	//Adds delay between exploit and current html changes and Objective-C changes!
 setTimeout(kext, 5337);
@@ -304,11 +304,11 @@ setTimeout(kext, 5337);
 function kext() {
 			//driveby();
 		main();
-	document.getElementById('status').innerText = 'JailbreakDone :)';
+	document.getElementById('status').innerText = 'Jailbreak Done :)';
 	document.getElementById("Goer").innerText = '	Jailbroken';
 		setTimeout(loadRes, 5666);
 		//setTimeout(respring, 16666);
-	document.getElementById('status').innerText = 'InstallingCydia...';
+	document.getElementById('status').innerText = 'Installing Cydia...';
 	document.getElementById("Goer").innerText = 'Jailbreaking';
 }
 </script>
