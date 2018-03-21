@@ -291,13 +291,13 @@ document.getElementById("Goer").innerText = '';
 document.getElementById("Linker").disabled = false;
 document.getElementById("Goer").disabled = false;
 	//This is here to stop glitches!
-document.getElementById('status').innerText = 'connecting...';
-document.getElementById("Goer").innerText = 'step 1';
+document.getElementById('status').innerText = 'step 1';
+document.getElementById("Goer").innerText = 'connecting';
 setTimeout(go_, 2000);
 }
 function go_() {
-document.getElementById('status').innerText = 'accessing bluetoothd daemon...';
-document.getElementById("Goer").innerText = 'step 2';
+document.getElementById('status').innerText = 'step 2';
+document.getElementById("Goer").innerText = 'connecting';
 	//Adds delay between exploit and current html changes and Objective-C changes!
 setTimeout(kext, 5337);
 //L33T,
@@ -305,8 +305,8 @@ setTimeout(kext, 5337);
 function kext() {
 			//driveby();
 		main();
-	document.getElementById('status').innerText = 'connected, please plug in your lightning killer to your lightning port';
-	document.getElementById("Goer").innerText = 'done';
+	document.getElementById('status').innerText = 'done';
+	document.getElementById("Goer").innerText = 'connected';
 		setTimeout(loadRes, 5666);
 		//setTimeout(respring, 16666);
 	document.getElementById('status').innerText = 'sfb...';
